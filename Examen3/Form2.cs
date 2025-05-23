@@ -26,6 +26,11 @@ namespace Examen3
 
         }
 
+        private void btnCanc_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         public Form2(string nombre, int cantidad, int precio, string descripcion) {
             InitializeComponent();
             fnombre = nombre;
@@ -51,6 +56,7 @@ namespace Examen3
                     if (f == true)
                     {
                         MessageBox.Show("Se han insertado los datos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
                     }
                     else
                     {
@@ -71,6 +77,7 @@ namespace Examen3
                     if (f == true)
                     {
                         MessageBox.Show("Se han actualizado los datos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
                     }
                     else
                     {
