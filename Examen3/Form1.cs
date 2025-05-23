@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Acceso_Datos_App_P23130577;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Examen3
 {
@@ -39,6 +40,15 @@ namespace Examen3
             if (ds != null)
             {
                 dataGridView1.DataSource = ds.Tables[0];
+            }
+        }
+        private void ActualizarGrid(string index) {
+            dataGridView1.DataSource = null;
+            dataGridView1.Rows.Clear();
+            Datos obj = new Datos();
+            DataSet buscar = obj.consulta("Select * From Productos WHERE NombreProducto LIKE '%"+index+"%';");
+            if (buscar != null) { 
+                dataGridView1.DataSource = buscar.Tables[0];
             }
         }
 
@@ -112,6 +122,17 @@ namespace Examen3
         {
             Reporte frm = new Reporte();
             frm.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (!textBox1.Text.IsNullOrEmpty())
+            {
+                ActualizarGrid(textBox1.Text);
+            }
+            else {
+                ActualizarGrid();
+            }
         }
     }
 }
