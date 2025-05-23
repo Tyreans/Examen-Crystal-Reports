@@ -44,6 +44,10 @@
             this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
             this.crystalReportViewer1.TabIndex = 0;
             // 
+            // CrystalReport21
+            // 
+            this.CrystalReport21.InitReport += new System.EventHandler(this.CrystalReport21_InitReport);
+            // 
             // Reporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);

@@ -16,5 +16,10 @@ namespace Examen3
         {
             InitializeComponent();
         }
+
+        private void CrystalReport21_InitReport(object sender, EventArgs e)
+        {
+
+        }
     }
 }
