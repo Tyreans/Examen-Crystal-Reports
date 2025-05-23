@@ -45,7 +45,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(13, 30);
+            this.lblNombre.Location = new System.Drawing.Point(13, 69);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(65, 20);
             this.lblNombre.TabIndex = 0;
@@ -53,14 +53,14 @@
             // 
             // tbNombre
             // 
-            this.tbNombre.Location = new System.Drawing.Point(99, 30);
+            this.tbNombre.Location = new System.Drawing.Point(99, 69);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(100, 26);
+            this.tbNombre.Size = new System.Drawing.Size(120, 26);
             this.tbNombre.TabIndex = 1;
             // 
             // numPrecio
             // 
-            this.numPrecio.Location = new System.Drawing.Point(99, 63);
+            this.numPrecio.Location = new System.Drawing.Point(99, 118);
             this.numPrecio.Maximum = new decimal(new int[] {
             1874919423,
             2328306,
@@ -73,7 +73,7 @@
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(13, 69);
+            this.lblPrecio.Location = new System.Drawing.Point(13, 124);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(53, 20);
             this.lblPrecio.TabIndex = 3;
@@ -83,7 +83,7 @@
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(13, 119);
+            this.lblCantidad.Location = new System.Drawing.Point(13, 174);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(73, 20);
             this.lblCantidad.TabIndex = 5;
@@ -91,7 +91,7 @@
             // 
             // numCanti
             // 
-            this.numCanti.Location = new System.Drawing.Point(99, 113);
+            this.numCanti.Location = new System.Drawing.Point(99, 168);
             this.numCanti.Maximum = new decimal(new int[] {
             -727379969,
             232,
@@ -103,16 +103,16 @@
             // 
             // rtbDescr
             // 
-            this.rtbDescr.Location = new System.Drawing.Point(479, 227);
+            this.rtbDescr.Location = new System.Drawing.Point(346, 27);
             this.rtbDescr.Name = "rtbDescr";
-            this.rtbDescr.Size = new System.Drawing.Size(100, 96);
+            this.rtbDescr.Size = new System.Drawing.Size(309, 311);
             this.rtbDescr.TabIndex = 6;
             this.rtbDescr.Text = "";
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(375, 215);
+            this.lblDescripcion.Location = new System.Drawing.Point(235, 30);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(92, 20);
             this.lblDescripcion.TabIndex = 7;
@@ -120,9 +120,9 @@
             // 
             // btnAlta
             // 
-            this.btnAlta.Location = new System.Drawing.Point(50, 351);
+            this.btnAlta.Location = new System.Drawing.Point(18, 303);
             this.btnAlta.Name = "btnAlta";
-            this.btnAlta.Size = new System.Drawing.Size(75, 35);
+            this.btnAlta.Size = new System.Drawing.Size(133, 35);
             this.btnAlta.TabIndex = 8;
             this.btnAlta.Text = "Registrar";
             this.btnAlta.UseVisualStyleBackColor = true;
@@ -130,9 +130,9 @@
             // 
             // btnCanc
             // 
-            this.btnCanc.Location = new System.Drawing.Point(249, 351);
+            this.btnCanc.Location = new System.Drawing.Point(194, 303);
             this.btnCanc.Name = "btnCanc";
-            this.btnCanc.Size = new System.Drawing.Size(75, 35);
+            this.btnCanc.Size = new System.Drawing.Size(133, 35);
             this.btnCanc.TabIndex = 9;
             this.btnCanc.Text = "Cancelar";
             this.btnCanc.UseVisualStyleBackColor = true;
@@ -141,7 +141,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(685, 450);
             this.Controls.Add(this.btnCanc);
             this.Controls.Add(this.btnAlta);
             this.Controls.Add(this.lblDescripcion);
